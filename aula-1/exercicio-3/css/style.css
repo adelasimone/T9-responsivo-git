@@ -7,13 +7,17 @@ header {
     background: url(../img/gato-background.jpg);
     background-size: cover;
     background-position: center;
-    height: 180px;  
+    min-height: 180px;  
     align-items: center;  
+    padding: 20px;
+    text-align: justify;
 }
-header div {
+.header.caixa {
     align-items: center;
     display: flex;
+    flex-direction: column;
 }
+
 h1 {
     font-weight: bold;
     text-align: center;
@@ -27,9 +31,36 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
+
 .todos div img {
     width: 250px;
     height: 150px;   
 }
-/*  */
+
+.todos:last-child {
+    margin-top: 20px;
+}
+
+/*  
+@media screen and (max-width: 850px) {
+    .todos {
+        flex-wrap: wrap;
+
+    }
+}
+*/
+
+@media screen and (max-width: 850px) {
+    .todos {
+        flex-wrap: wrap;
+    }
+    .todos:last-child {
+        margin-top: 0;
+    }
+    .header-caixa {
+        flex-direction: column;
+    }
+
+}

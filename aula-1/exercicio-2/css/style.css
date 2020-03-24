@@ -32,6 +32,8 @@ h2 {
 
 .sobre-conteudo__img {
     margin-top: 80px;
+    max-width: 233px;
+    width: 100%;
 }  
     
 .sobre-conteudo {
@@ -51,5 +53,11 @@ h2 {
     margin-left: 40px;
 }
 
+/* Media Query */
+@media screen and (max-width: 320px) {
+    .secao-sobre {
+        background-color: red;
+    }
+}
 
 
